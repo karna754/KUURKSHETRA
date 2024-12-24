@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurukshetra Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      color: #00aaff;
+    }
+
+    /* Section Under Navbar */
+    .under-navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 20px;
+      background-color: #f5f5f5;
+    }
+
+    .under-navbar .logo-section {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-section img {
+      height: 80px;
+      margin-right: 20px;
+    }
+
+    .logo-section .logo-text {
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+      text-transform: uppercase;
+    }
+
+    .under-navbar .caption-section {
+      text-align: right;
+      max-width: 50%;
+    }
+
+    .caption-section h2 {
+      margin: 0;
+      font-size: 22px;
+      color: #1a1a1a;
+    }
+
+    .caption-section p {
+      margin: 10px 0 0 0;
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .under-navbar {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .logo-section {
+        margin-bottom: 20px;
+      }
+
+      .caption-section {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .caption-section h2 {
+        font-size: 20px;
+      }
+
+      .caption-section p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+    
+  <!-- Navbar -->
+  <div class="navbar" style="background-color: #1a1a1a; text-align: center;">
+    <ul style="font-family: 'Times New Roman', Times, serif; display: flex; justify-content: center; margin: 0 auto; padding: 0; list-style: none;">
+      <li style="display: inline-block; margin: 0 25px;"><a href="#calendar" style="font-family: 'Times New Roman', Times, serif;">Calendar</a></li>
+      <li style="display: inline-block; margin: 0 25px;"><a href="#events" style="font-family: 'Times New Roman', Times, serif;">Events</a></li>
+      <li style="display: inline-block; margin: 0 25px;"><a href="#tickets" style="font-family: 'Times New Roman', Times, serif;">Tickets</a></li>
+      <li style="display: inline-block; margin: 0 25px;"><a href="#certificates" style="font-family: 'Times New Roman', Times, serif;">Certificates</a></li>
+      <li style="display: inline-block; margin: 0 25px;"><a href="#home" style="font-family: 'Times New Roman', Times, serif;">Home</a></li>
+      <li style="display: inline-block; margin: 0 25px;"><a href="#course" style="font-family: 'Times New Roman', Times, serif;">Course</a></li>
+      <li style="display: inline-block; margin: 0 25px;"><a href="#programs" style="font-family: 'Times New Roman', Times, serif;">Programs</a></li>
+      <li style="display: inline-block; margin: 0 25px;"><a href="#gallery" style="font-family: 'Times New Roman', Times, serif;">Gallery</a></li>
+      <li style="display: inline-block; margin: 0 25px;"><a href="#about" style="font-family: 'Times New Roman', Times, serif;">About</a></li>
+    </ul>
+  </div>
+  <div class="under-navbar" style="display: flex; align-items: center; padding: 20px; background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);">
+    <div class="logo-section" style="margin: 0 auto; width: 280px; height: 280px;">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQvL0ZXW1LaJyd1USPSOZZJW_B80uODr7ka0X-obuxCvu12lyFgQ8pzZmgEFGyO2GhCd9wTDx2HTxcakccll2gorSADNM_jy3NE26PC8KNlvzHM7v52GRKeYcop_yhimIkx0TY7BgZJ0XxHmVHePXBUijkQ-qWd65PmLb4dNBKOKrOPYwqNCn874ZOZlg/s320/Kurukshetra%20logo.png" alt="Kurukshetra Logo" style="width: 100%; height: 100%; object-fit: contain; border-radius: 50%; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+    </div>
+    <div class="caption-section" style="flex: 1; max-width: 600px;">
+      <h2 style="color: #1a1a1a; font-size: 32px; margin-bottom: 15px; font-weight: bold;">Welcome to Kurukshetra AI & ML Club</h2>
+      <p style="color: #555; font-size: 18px; line-height: 1.8; margin-bottom: 20px; font-family: 'Brush Script MT', cursive; font-style: italic;">
+        We are a passionate community dedicated to exploring and advancing the frontiers of Artificial Intelligence and Machine Learning. Our mission is to empower students with cutting-edge skills and knowledge in AI & ML technologies.
+      </p>
+      <div style="display: flex; gap: 20px;">
+        <button onclick="window.location.href='https://chat.whatsapp.com/G8oH93B9hvnB0wplCXa9Fu'" style="padding: 12px 25px; background-color: #00aaff; color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; transition: background-color 0.3s;">Join Us</button>
+        <button onclick="window.location.href='https://www.linkedin.com/company/kurukshetra-aimlclub/'" style="padding: 12px 25px; background-color: transparent; color: #00aaff; border: 2px solid #00aaff; border-radius: 5px; font-weight: bold; cursor: pointer; transition: all 0.3s;">LinkedIn</button>
+      </div>
+    </div>
+  </div>
+  <div style="padding: 40px; background-color: #fff;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+        <!-- Search Bar -->
+        <div style="background: #f8f9fa; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); grid-column: 1 / -1;">
+            <div style="position: relative;">
+              <input type="text" id="searchInput" placeholder="Search courses, programs and content..." 
+                style="width: 70%; 
+                       padding: 10px 35px 10px 15px;
+                       border: 2px solid #00aaff;
+                       border-radius: 8px;
+                       font-size: 14px;
+                       color: #555;
+                       background: white;
+                       transition: all 0.3s ease;"
+                onkeyup="searchContent()"
+                onfocus="this.style.boxShadow='0 0 10px rgba(0,170,255,0.2)'"
+                onblur="this.style.boxShadow='none'">
+              <svg style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px; color: #00aaff;" 
+                   xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+            <div id="searchResults" style="margin-top: 15px; max-height: 300px; overflow-y: auto; display: none;">
+            </div>
+          </div>
+  
+          <script>
+            function searchContent() {
+              const searchInput = document.getElementById('searchInput');
+              const searchResults = document.getElementById('searchResults');
+              const query = searchInput.value.toLowerCase();
+              
+              // Only show results if query has 2 or more characters
+              if (query.length < 2) {
+                searchResults.style.display = 'none';
+                return;
+              }
+  
+              // Get all course and program elements
+              const items = document.querySelectorAll('h3, li a');
+              let results = '';
+  
+              items.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                if (text.includes(query)) {
+                  if (item.tagName === 'A') {
+                    results += `
+                      <div style="padding: 10px; border-bottom: 1px solid #eee; cursor: pointer; transition: background 0.2s;"
+                           onmouseover="this.style.background='#f0f0f0'" 
+                           onmouseout="this.style.background='transparent'">
+                        <a href="${item.href}" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                          ${item.innerHTML}
+                        </a>
+                      </div>`;
+                  } else {
+                    results += `
+                      <div style="padding: 10px; border-bottom: 1px solid #eee; color: #1a1a1a; font-weight: bold;">
+                        ${item.textContent}
+                      </div>`;
+                  }
+                }
+              });
+  
+              if (results) {
+                searchResults.innerHTML = results;
+                searchResults.style.display = 'block';
+              } else {
+                searchResults.innerHTML = '<div style="padding: 10px; color: #666;">No results found</div>';
+                searchResults.style.display = 'block';
+              }
+            }
+          </script>
+        <!-- Courses Section -->
+        <div id="course" style="background: #f8f9fa; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease; overflow: hidden;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 8px 15px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 6px rgba(0,0,0,0.1)'">
+          <img src="https://cdn.pixabay.com/photo/2018/03/21/07/16/learning-3245793_1280.jpg" alt="Courses" style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+          <h3 style="color: #1a1a1a; font-size: 24px; margin-bottom: 20px; border-bottom: 2px solid #00aaff; padding-bottom: 10px;">Featured Courses</h3>
+          <ul style="list-style: none; padding: 0; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="#" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <i class="fas fa-code" style="color: #00aaff;"></i>
+                Advanced Python Programming
+              </a>
+            </li>
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="#" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <i class="fas fa-database" style="color: #00aaff;"></i>
+                Data Science Essentials
+              </a>
+            </li>
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="#" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <i class="fas fa-microchip" style="color: #00aaff;"></i>
+                AI for Beginners
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div style="background: #f8f9fa; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease; overflow: hidden;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 8px 15px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 6px rgba(0,0,0,0.1)'">
+          <img src="https://cdn.pixabay.com/photo/2018/03/21/07/16/learning-3245793_1280.jpg" alt="Courses" style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+          <h3 style="color: #1a1a1a; font-size: 24px; margin-bottom: 20px; border-bottom: 2px solid #00aaff; padding-bottom: 10px;">Courses</h3>
+          <ul style="list-style: none; padding: 0; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="#" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <i class="fas fa-laptop-code" style="color: #00aaff;"></i>
+                Introduction to Programming
+              </a>
+            </li>
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="#" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <i class="fas fa-brain" style="color: #00aaff;"></i>
+                Machine Learning Basics
+              </a>
+            </li>
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="#" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <i class="fas fa-robot" style="color: #00aaff;"></i>
+                Deep Learning Fundamentals
+              </a>
+            </li>
+          </ul>
+        </div>
+
+          <!-- Programming Languages - 1 -->
+        <div style="background: #f8f9fa; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease; overflow: hidden;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 8px 15px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 6px rgba(0,0,0,0.1)'">
+          <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="Programming" style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+          <h3 style="color: #1a1a1a; font-size: 24px; margin-bottom: 20px; border-bottom: 2px solid #00aaff; padding-bottom: 10px;">Programming Languages - 1</h3>
+          <ul style="list-style: none; padding: 0; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://www.w3schools.com/c/" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" style="width: 24px; height: 24px;">
+                C Programming
+              </a>
+            </li>
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://www.learncpp.com/" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" style="width: 24px; height: 24px;">
+                C++ Development
+              </a>
+            </li>
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://docs.oracle.com/javase/tutorial/" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" style="width: 24px; height: 24px;">
+                Java Programming
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Programming Languages - 2 -->
+        <div style="background: #f8f9fa; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease; overflow: hidden;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 8px 15px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 6px rgba(0,0,0,0.1)'">
+          <img src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png" alt="Web Programming" style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+          <h3 style="color: #1a1a1a; font-size: 24px; margin-bottom: 20px; border-bottom: 2px solid #00aaff; padding-bottom: 10px;">Programming Languages - 2</h3>
+          <ul style="list-style: none; padding: 0; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://javascript.info/" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="width: 24px; height: 24px;">
+                JavaScript
+              </a>
+            </li>
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://www.python.org/doc/" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" style="width: 24px; height: 24px;">
+                Python
+              </a>
+            </li>
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://www.php.net/manual/en/" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" style="width: 24px; height: 24px;">
+                PHP
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Non Technical Courses -->
+        <div style="background: #f8f9fa; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease; overflow: hidden;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 8px 15px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 6px rgba(0,0,0,0.1)'">
+          <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg" alt="Soft Skills" style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+          <h3 style="color: #1a1a1a; font-size: 24px; margin-bottom: 20px; border-bottom: 2px solid #00aaff; padding-bottom: 10px;">Non Technical Courses</h3>
+          <ul style="list-style: none; padding: 0; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://www.coursera.org/learn/communication-skills" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <i class="fas fa-comments" style="color: #00aaff;"></i>
+                Communication Skills
+              </a>
+            </li>
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://www.linkedin.com/learning/topics/leadership-and-management" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <i class="fas fa-users" style="color: #00aaff;"></i>
+                Leadership Skills
+              </a>
+            </li>
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://www.coursera.org/learn/project-management-basics" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <i class="fas fa-tasks" style="color: #00aaff;"></i>
+                Project Management
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Projects -->
+        <div style="background: #f8f9fa; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease; overflow: hidden;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 8px 15px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 6px rgba(0,0,0,0.1)'">
+          <img src="https://cdn.pixabay.com/photo/2017/06/12/04/21/project-2394365_1280.jpg" alt="Projects" style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+          <h3 style="color: #1a1a1a; font-size: 24px; margin-bottom: 20px; border-bottom: 2px solid #00aaff; padding-bottom: 10px;">Projects</h3>
+          <ul style="list-style: none; padding: 0; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://github.com/topics/web-development" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="width: 24px; height: 24px;">
+                Web Development
+              </a>
+            </li>
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://github.com/topics/machine-learning" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" style="width: 24px; height: 24px;">
+                Machine Learning
+              </a>
+            </li>
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://github.com/topics/mobile-app" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" style="width: 24px; height: 24px;">
+                Mobile Development
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Practice -->
+        <div style="background: #f8f9fa; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease; overflow: hidden;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 8px 15px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 6px rgba(0,0,0,0.1)'">
+          <img src="https://cdn.pixabay.com/photo/2016/11/19/22/52/coding-1841550_1280.jpg" alt="Practice" style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+          <h3 style="color: #1a1a1a; font-size: 24px; margin-bottom: 20px; border-bottom: 2px solid #00aaff; padding-bottom: 10px;">Practice</h3>
+          <ul style="list-style: none; padding: 0; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://leetcode.com/" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="https://leetcode.com/static/images/LeetCode_logo_rvs.png" style="width: 24px; height: 24px;">
+                LeetCode
+              </a>
+            </li>
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://www.hackerrank.com/" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="https://hrcdn.net/fcore/assets/work/header/hackerrank_logo-21e2867566.svg" style="width: 24px; height: 24px;">
+                HackerRank
+              </a>
+            </li>
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://www.codechef.com/" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="https://cdn.codechef.com/sites/all/themes/abessive/cc-logo.svg" style="width: 24px; height: 24px;">
+                CodeChef
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- DSA -->
+        <div style="background: #f8f9fa; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease; overflow: hidden;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 8px 15px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 6px rgba(0,0,0,0.1)'">
+          <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="DSA" style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+          <h3 style="color: #1a1a1a; font-size: 24px; margin-bottom: 20px; border-bottom: 2px solid #00aaff; padding-bottom: 10px;">DSA</h3>
+          <ul style="list-style: none; padding: 0; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200716222246/Path-219.png" style="width: 24px; height: 24px;">
+                Data Structures
+              </a>
+            </li>
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200716222246/Path-219.png" style="width: 24px; height: 24px;">
+                Algorithms
+              </a>
+            </li>
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://visualgo.net/" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <i class="fas fa-project-diagram" style="color: #00aaff;"></i>
+                Algorithm Visualization
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- AI Tools -->
+        <div style="background: #f8f9fa; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease; overflow: hidden;" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 8px 15px rgba(0,0,0,0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 6px rgba(0,0,0,0.1)'">
+          <img src="https://cdn.pixabay.com/photo/2019/04/16/11/14/ai-4131526_1280.jpg" alt="AI Tools" style="width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+          <h3 style="color: #1a1a1a; font-size: 24px; margin-bottom: 20px; border-bottom: 2px solid #00aaff; padding-bottom: 10px;">AI Tools</h3>
+          <ul style="list-style: none; padding: 0; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://www.tensorflow.org/" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" style="width: 24px; height: 24px;">
+                TensorFlow
+              </a>
+            </li>
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://pytorch.org/" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="https://pytorch.org/assets/images/pytorch-logo.png" style="width: 24px; height: 24px;">
+                PyTorch
+              </a>
+            </li>
+            <li style="margin: 15px 0; padding: 10px; background: rgba(0,170,255,0.1); border-radius: 6px;">
+              <a href="https://scikit-learn.org/" target="_blank" style="color: #555; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" style="width: 24px; height: 24px;">
+                Scikit-learn
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script>
+    // Gallery image data
+    const galleryData = {
+      hackathons: [
+        'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+      ],
+      events: [
+        'https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+      ],
+      webinars: [
+        'https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1558008258-3256797b43f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+      ],
+      sports: [
+        'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+      ],
+      cultural: [
+        'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+        'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+      ]
+    };
+
+    function toggleGallery(section) {
+      const gallery = document.getElementById(`${section}-gallery`);
+      const allGalleries = document.querySelectorAll('.gallery');
+      
+      // Close all other galleries
+      allGalleries.forEach(g => {
+        if (g.id !== `${section}-gallery`) {
+          g.style.display = 'none';
+        }
+      });
+
+      // Toggle clicked gallery
+      if (gallery.style.display === 'none') {
+        // Load images if not already loaded
+        if (!gallery.hasChildNodes()) {
+          const images = galleryData[section];
+          const galleryHTML = images.map(src => `
+            <img src="${src}" alt="${section}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; cursor: pointer; transition: transform 0.3s ease;" 
+                 onclick="openModal('${src}')"
+                 onmouseover="this.style.transform='scale(1.05)'" 
+                 onmouseout="this.style.transform='scale(1)'">
+          `).join('');
+          gallery.innerHTML = galleryHTML;
+        }
+        gallery.style.display = 'block';
+      } else {
+        gallery.style.display = 'none';
+      }
+    }
+
+    // Modal functionality
+    function openModal(src) {
+      const modal = document.createElement('div');
+      modal.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        cursor: pointer;
+      `;
+      
+      const img = document.createElement('img');
+      img.src = src;
+      img.style.cssText = `
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+        border-radius: 8px;
+      `;
+      
+      modal.appendChild(img);
+      modal.onclick = () => modal.remove();
+      document.body.appendChild(modal);
+    }
+  </script>
+  <!-- Programs Section -->
+   
+  <div id="programs" style="padding: 40px 20px; background: #fff;">
+    <h2 style="text-align: center; color: #1a1a1a; font-size: 32px; margin-bottom: 40px;">Our Programs</h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto;">
+    
+      <!-- Hackathons Box -->
+      <div class="program-box" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 2px solid #00aaff; box-shadow: 0 4px 15px rgba(0,170,255,0.2); cursor: pointer; transition: all 0.3s ease;" onclick="toggleGallery('hackathons')" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+        <h3 style="color: #00aaff; font-size: 24px; margin-bottom: 15px;">Hackathons</h3>
+        <p style="color: #555; margin-bottom: 15px;">Participate in exciting coding challenges and build innovative solutions.</p>
+        <div id="hackathons-gallery" style="display: none; margin-top: 20px;" class="gallery"></div>
+      </div>
+
+      <!-- Events Box -->
+      <div class="program-box" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 2px solid #00aaff; box-shadow: 0 4px 15px rgba(0,170,255,0.2); cursor: pointer; transition: all 0.3s ease;" onclick="toggleGallery('events')" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+        <h3 style="color: #00aaff; font-size: 24px; margin-bottom: 15px;">Events</h3>
+        <p style="color: #555; margin-bottom: 15px;">Join our tech talks, workshops, and networking events.</p>
+        <div id="events-gallery" style="display: none; margin-top: 20px;" class="gallery"></div>
+      </div>
+
+      <!-- Webinars Box -->
+      <div class="program-box" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 2px solid #00aaff; box-shadow: 0 4px 15px rgba(0,170,255,0.2); cursor: pointer; transition: all 0.3s ease;" onclick="toggleGallery('webinars')" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+        <h3 style="color: #00aaff; font-size: 24px; margin-bottom: 15px;">Webinars</h3>
+        <p style="color: #555; margin-bottom: 15px;">Learn from industry experts through online sessions.</p>
+        <div id="webinars-gallery" style="display: none; margin-top: 20px;" class="gallery"></div>
+      </div>
+
+      <!-- Sports Box -->
+      <div class="program-box" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 2px solid #00aaff; box-shadow: 0 4px 15px rgba(0,170,255,0.2); cursor: pointer; transition: all 0.3s ease;" onclick="toggleGallery('sports')" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+        <h3 style="color: #00aaff; font-size: 24px; margin-bottom: 15px;">Sports</h3>
+        <p style="color: #555; margin-bottom: 15px;">Stay active with our sports events and tournaments.</p>
+        <div id="sports-gallery" style="display: none; margin-top: 20px;" class="gallery"></div>
+      </div>
+
+      <!-- Cultural Box -->
+      <div class="program-box" style="background: #f8f9fa; padding: 25px; border-radius: 12px; border: 2px solid #00aaff; box-shadow: 0 4px 15px rgba(0,170,255,0.2); cursor: pointer; transition: all 0.3s ease;" onclick="toggleGallery('cultural')" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+        <h3 style="color: #00aaff; font-size: 24px; margin-bottom: 15px;">Cultural</h3>
+        <p style="color: #555; margin-bottom: 15px;">Experience diverse cultural activities and celebrations.</p>
+        <div id="cultural-gallery" style="display: none; margin-top: 20px;" class="gallery"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleGallery(section) {
+      const gallery = document.getElementById(`${section}-gallery`);
+      const allGalleries = document.querySelectorAll('.gallery');
+      
+      // Close all other galleries
+      allGalleries.forEach(g => {
+        if (g.id !== `${section}-gallery`) {
+          g.style.display = 'none';
+        }
+      });
+
+      // Toggle the clicked gallery
+      if (gallery.style.display === 'none') {
+        gallery.style.display = 'grid';
+        gallery.style.gridTemplateColumns = 'repeat(auto-fit, minmax(150px, 1fr))';
+        gallery.style.gap = '15px';
+        
+        // Load images dynamically based on section
+        const images = {
+          events: [
+            'events1.jpg',
+            'events2.jpg', 
+            'events3.jpg'
+          ],
+          webinars: [
+            'webinar1.jpg',
+            'webinar2.jpg',
+            'webinar3.jpg'
+          ],
+          sports: [
+            'sports1.jpg',
+            'sports2.jpg',
+            'sports3.jpg'
+          ],
+          cultural: [
+            'cultural1.jpg',
+            'cultural2.jpg',
+            'cultural3.jpg'
+          ]
+        };
+
+        let galleryHTML = '';
+        images[section].forEach(img => {
+          galleryHTML += `
+            <div class="gallery-item" style="overflow: hidden; border-radius: 8px;">
+              <img src="images/${img}" alt="${section} image" style="width: 100%; height: 150px; object-fit: cover;">
+            </div>
+          `;
+        });
+        gallery.innerHTML = galleryHTML;
+      } else {
+        gallery.style.display = 'none';
+      }
+    }
+  </script>
+  <!-- Latest Events Section -->
+  <div id="gallery" style="padding: 40px 20px; background: #f8f9fa;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <h2 style="text-align: center; color: #1a1a1a; margin-bottom: 30px; font-size: 32px;">Latest Events</h2>
+      
+      <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <div class="slider" style="display: flex; transition: transform 0.5s ease;">
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87" style="min-width: 100%; height: 400px; object-fit: cover;">
+          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865" style="min-width: 100%; height: 400px; object-fit: cover;">
+          <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2" style="min-width: 100%; height: 400px; object-fit: cover;">
+          <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f" style="min-width: 100%; height: 400px; object-fit: cover;">
+          <img src="https://images.unsplash.com/photo-1558008258-3256797b43f3" style="min-width: 100%; height: 400px; object-fit: cover;">
+          <img src="https://images.unsplash.com/photo-1552581234-26160f608093" style="min-width: 100%; height: 400px; object-fit: cover;">
+          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b" style="min-width: 100%; height: 400px; object-fit: cover;">
+          <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819" style="min-width: 100%; height: 400px; object-fit: cover;">
+          <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3" style="min-width: 100%; height: 400px; object-fit: cover;">
+          <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7" style="min-width: 100%; height: 400px; object-fit: cover;">
+        </div>
+
+        <button onclick="moveSlide(-1)" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.7); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; display: flex; align-items: center; justify-content: center;">❮</button>
+        <button onclick="moveSlide(1)" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.7); border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; display: flex; align-items: center; justify-content: center;">❯</button>
+      </div>
+
+      <div style="text-align: center; margin-top: 20px;">
+        <div class="slider-dots" style="display: inline-flex; gap: 8px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slider img');
+    const slider = document.querySelector('.slider');
+    const dotsContainer = document.querySelector('.slider-dots');
+
+    // Create dots
+    slides.forEach((_, index) => {
+      const dot = document.createElement('div');
+      dot.style.cssText = 'width: 10px; height: 10px; border-radius: 50%; background: #ccc; cursor: pointer; transition: background-color 0.3s ease;';
+      dot.onclick = () => goToSlide(index);
+      dotsContainer.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll('.slider-dots div');
+
+    function updateDots() {
+      dots.forEach((dot, index) => {
+        dot.style.backgroundColor = index === currentSlide ? '#00aaff' : '#ccc';
+      });
+    }
+
+    function moveSlide(direction) {
+      currentSlide = (currentSlide + direction + slides.length) % slides.length;
+      slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+      updateDots();
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+      updateDots();
+    }
+
+    // Auto-advance slides every 5 seconds
+    setInterval(() => moveSlide(1), 5000);
+
+    // Initialize first dot
+    updateDots();
+  </script>
+  <!-- Collaborations Section -->
+  <div id="about" style="padding: 40px 20px; background: #f8f9fa;">
+    <h2 style="text-align: center; color: #1a1a1a; font-size: 32px; margin-bottom: 40px;">Our Collaborations</h2>
+    
+    <div style="max-width: 1200px; margin: 0 auto; overflow: hidden;">
+      <div style="display: flex; animation: scroll 30s linear infinite;" onmouseover="this.style.animationPlayState='paused'" onmouseout="this.style.animationPlayState='running'">
+        <!-- First set of logos -->
+        <div style="display: flex; gap: 50px; padding: 20px; min-width: 100%;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google" style="height: 80px; object-fit: contain;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" alt="Apple" style="height: 80px; object-fit: contain;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoft/microsoft-original.svg" alt="Microsoft" style="height: 80px; object-fit: contain;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazon/amazon-original.svg" alt="Amazon" style="height: 80px; object-fit: contain;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" style="height: 80px; object-fit: contain;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="height: 80px; object-fit: contain;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter" style="height: 80px; object-fit: contain;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle" style="height: 80px; object-fit: contain;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intel/intel-original.svg" alt="Intel" style="height: 80px; object-fit: contain;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nvidia/nvidia-original.svg" alt="NVIDIA" style="height: 80px; object-fit: contain;">
+        </div>
+        <!-- Duplicate set for seamless scrolling -->
+        <div style="display: flex; gap: 50px; padding: 20px; min-width: 100%;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google" style="height: 80px; object-fit: contain;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" alt="Apple" style="height: 80px; object-fit: contain;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoft/microsoft-original.svg" alt="Microsoft" style="height: 80px; object-fit: contain;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazon/amazon-original.svg" alt="Amazon" style="height: 80px; object-fit: contain;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" style="height: 80px; object-fit: contain;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="height: 80px; object-fit: contain;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter" style="height: 80px; object-fit: contain;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle" style="height: 80px; object-fit: contain;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intel/intel-original.svg" alt="Intel" style="height: 80px; object-fit: contain;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nvidia/nvidia-original.svg" alt="NVIDIA" style="height: 80px; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    /* About Section Styles */
+    .about-section {
+      padding: 60px 20px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .about-heading {
+      color: #1a1a1a;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .about-description {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      color: #555;
+      line-height: 1.8;
+    }
+
+    .location {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 40px;
+      color: #555;
+    }
+
+    .location svg {
+      width: 24px;
+      height: 24px;
+      color: #00aaff;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .team-member {
+      background: #f8f9fa;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .team-member:hover {
+      transform: translateY(-5px);
+    }
+
+    .member-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: 0 auto 15px;
+      object-fit: cover;
+      border: 3px solid #00aaff;
+    }
+
+    .member-name {
+      color: #1a1a1a;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .member-role {
+      color: #00aaff;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .social-link {
+      color: #555;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: color 0.3s;
+    }
+
+    .social-link:hover {
+      color: #00aaff;
+    }
+
+    @media (max-width: 768px) {
+      .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+    }
+  </style>
+
+  <div class="about-section">
+    <h2 class="about-heading">About Us</h2>
+    <p class="about-description">
+      The Kurukshetra AI & ML Club was established at Shree Motilal Gupta Organisation Institute of Higher Learning with the vision to create a vibrant community of AI enthusiasts and future innovators.
+    </p>
+    <div style="display: flex; justify-content: center; gap: 30px; margin: 30px 0;">
+      <a href="https://www.linkedin.com/company/kurukshetra-aimlclub/" class="social-link" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: #0077b5; font-size: 16px; padding: 10px 20px; border: 2px solid #0077b5; border-radius: 8px; transition: all 0.3s;">
+        <svg width="24" height="24" fill="currentColor" style="margin-right: 8px;" viewBox="0 0 16 16">
+          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+        </svg>
+        LinkedIn
+      </a>
+
+      <a href="https://www.instagram.com/kurukshetra_aiml/" class="social-link" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: #E1306C; font-size: 16px; padding: 10px 20px; border: 2px solid #E1306C; border-radius: 8px; transition: all 0.3s;">
+        <svg width="24" height="24" fill="currentColor" style="margin-right: 8px;" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        </svg>
+        Instagram
+      </a>
+
+      <a href="https://www.youtube.com/@kurukshetraaiml" class="social-link" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: #FF0000; font-size: 16px; padding: 10px 20px; border: 2px solid #FF0000; border-radius: 8px; transition: all 0.3s;">
+        <svg width="24" height="24" fill="currentColor" style="margin-right: 8px;" viewBox="0 0 16 16">
+          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+        </svg>
+        YouTube
+      </a>
+    </div>
+
+    <div class="location">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>
+      <span>Mumbai, Maharashtra, India</span>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="path_to_photo1.jpg" alt="John Doe" class="member-photo">
+        <h3 class="member-name">John Doe</h3>
+        <p class="member-role">Club President</p>
+        <a href="https://linkedin.com/in/johndoe" class="social-link" target="_blank">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+          </svg>
+          LinkedIn Profile
+        </a>
+      </div>
+
+      <div class="team-member">
+        <img src="path_to_photo2.jpg" alt="Jane Smith" class="member-photo">
+        <h3 class="member-name">Jane Smith</h3>
+        <p class="member-role">Technical Lead</p>
+        <a href="https://linkedin.com/in/janesmith" class="social-link" target="_blank">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+          </svg>
+          LinkedIn Profile
+        </a>
+      </div>
+
+      <div class="team-member">
+        <img src="path_to_photo3.jpg" alt="Mike Johnson" class="member-photo">
+        <h3 class="member-name">Mike Johnson</h3>
+        <p class="member-role">Event Coordinator</p>
+        <a href="https://linkedin.com/in/mikejohnson" class="social-link" target="_blank">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+          </svg>
+          LinkedIn Profile
+        </a>
+      </div>
+    </div>
+  </div>    
+<!-- Chatbot -->
+  <div id="chatbot" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+    <!-- Chat Button -->
+    <button onclick="toggleChat()" id="chat-button" style="width: 60px; height: 60px; border-radius: 50%; background: #00aaff; border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(0,170,255,0.3); display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+      <svg id="chat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+    </button>
+
+    <!-- Chat Window -->
+    <div id="chat-window" style="display: none; position: absolute; bottom: 80px; right: 0; width: 300px; height: 400px; background: white; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.15); overflow: hidden;">
+      <!-- Chat Header -->
+      <div style="background: #00aaff; color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+        <h3 style="margin: 0; font-size: 16px;">Kurukshetra AI & ML Club Chat</h3>
+        <button onclick="toggleChat()" style="background: none; border: none; color: white; cursor: pointer;">✕</button>
+      </div>
+
+      <!-- Chat Messages -->
+      <div id="chat-messages" style="height: 300px; overflow-y: auto; padding: 15px;">
+        <div class="bot-message" style="background: #f0f2f5; padding: 10px; border-radius: 10px; margin-bottom: 10px; max-width: 80%;">
+          Hi! Welcome to Kurukshetra AI & ML Club. How can I help you today?
+        </div>
+      </div>
+
+      <!-- Chat Input -->
+      <div style="padding: 15px; border-top: 1px solid #eee;">
+        <div style="display: flex; gap: 10px;">
+          <input type="text" id="chat-input" placeholder="Type your message..." 
+                 style="flex: 1; padding: 8px 12px; border: 1px solid #ddd; border-radius: 20px; outline: none;">
+          <button onclick="sendMessage()" style="background: #00aaff; color: white; border: none; border-radius: 20px; padding: 8px 16px; cursor: pointer;">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Chat bot responses
+    const responses = {
+      // Courses related
+      "what courses do you provide": "We offer several courses including: Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, and Product Design. Each course is carefully designed to provide hands-on experience and practical knowledge.",
+      
+      "do you teach machine learning": "Yes! Our Machine Learning course is one of our core offerings. It covers fundamental concepts, algorithms, and practical applications using Python and popular ML libraries. The course includes hands-on projects and real-world case studies.",
+      
+      "do you offer blockchain courses": "Currently, we don't offer dedicated blockchain courses. However, we occasionally conduct workshops and seminars on blockchain technology. Our focus is primarily on AI and ML technologies.",
+      
+      "what is product design": "Product Design in our context focuses on creating AI/ML-powered solutions. We teach the entire process from problem identification to solution deployment, including user research, prototyping, and iterative development using AI/ML technologies.",
+      
+      "do you teach open source": "Yes, we actively promote open source development! We teach Git, GitHub, and encourage students to contribute to open source projects. We also organize workshops specifically focused on open source contribution.",
+      
+      // Programs related
+      "what programs do you conduct": "We conduct various programs including: Hackathons, Technical Workshops, Industry Expert Sessions, Project Showcases, and Networking Events. Check our Programs section for more details!",
+      
+      "do you conduct hackathons": "Yes! We regularly organize hackathons focused on AI/ML solutions. These events provide great opportunities to apply your skills, work in teams, and solve real-world problems.",
+      
+      "what is your next program": "Our upcoming programs are regularly updated on our website. Please check the Programs section or follow us on LinkedIn for the latest updates about upcoming events.",
+      
+      "do you provide career guidance": "Yes, we provide career guidance through mentorship programs, industry expert sessions, and alumni networks. We help students explore various career paths in AI/ML.",
+      
+      // Open Source related
+      "what is open source": "Open Source refers to software whose source code is freely available for anyone to view, use, modify, and distribute. It's a great way to learn, collaborate, and contribute to the developer community.",
+      
+      "do you teach git and github": "Yes! We provide comprehensive training on Git and GitHub as part of our technical skills development. These tools are essential for collaborative development and open source contribution.",
+      
+      "can i contribute to open source": "Absolutely! We encourage and guide students to contribute to open source projects. We provide mentorship and organize workshops to help you get started with open source contribution.",
+      
+      // Club FAQs
+      "is kurukshetra open to all students": "Yes, Kurukshetra AI & ML Club is open to all students who are passionate about AI and ML. We welcome members from all academic backgrounds!",
+      
+      "do you provide certificates": "Yes, we provide certificates for course completion, workshop participation, and successful project submissions. These certificates are recognized by our industry partners.",
+      
+      // General responses
+      "thank you": "You're welcome! Feel free to reach out if you have any more questions.",
+      "bye": "Goodbye! Thanks for chatting with us. Have a great day!",
+      "default": "I'm not sure about that. Please check our website for more information or contact us directly through the Join Us button."
+    };
+
+    function sendMessage() {
+      const input = document.getElementById('chat-input');
+      const message = input.value.trim().toLowerCase();
+      const messagesContainer = document.getElementById('chat-messages');
+      
+      if (message === '') return;
+
+      // Add user message
+      messagesContainer.innerHTML += `
+        <div style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
+          <div style="background: #00aaff; color: white; padding: 10px; border-radius: 10px; max-width: 80%;">
+            ${input.value}
+          </div>
+        </div>
+      `;
+
+      // Add bot response
+      let response = responses[message] || responses['default'];
+      messagesContainer.innerHTML += `
+        <div class="bot-message" style="background: #f0f2f5; padding: 10px; border-radius: 10px; margin-bottom: 10px; max-width: 80%;">
+          ${response}
+        </div>
+      `;
+
+      // Clear input and scroll to bottom
+      input.value = '';
+      messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+
+    function toggleChat() {
+      const chatWindow = document.getElementById('chat-window');
+      const chatButton = document.getElementById('chat-button');
+      chatWindow.style.display = chatWindow.style.display === 'none' ? 'block' : 'none';
+      chatButton.style.transform = chatWindow.style.display === 'none' ? 'scale(1)' : 'scale(0.9)';
+    }
+
+    // Allow sending message with Enter key
+    document.getElementById('chat-input').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        sendMessage();
+      }
+    });
+  </script>
+  <style>
+    /* Mobile-first responsive design */
+    @media only screen and (max-width: 768px) {
+      /* Navbar adjustments */
+      .navbar ul {
+        flex-direction: column;
+        padding: 10px 0;
+      }
+      
+      .navbar li {
+        margin: 10px 0;
+      }
+
+      /* Program boxes */
+      .program-box {
+        margin: 10px 0;
+      }
+
+      /* Search bar */
+      #searchInput {
+        width: 100% !important;
+      }
+
+      /* Chat window */
+      #chat-window {
+        width: 90% !important;
+        right: 5% !important;
+        bottom: 80px !important;
+      }
+
+      #chat-button {
+        right: 20px !important;
+        bottom: 20px !important;
+      }
+
+      /* Gallery/slider */
+      .slider img {
+        height: 300px !important;
+      }
+
+      .slider-dots {
+        margin-top: 10px !important;
+      }
+    }
+
+    /* Tablet adjustments */
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+      .program-box {
+        margin: 15px;
+      }
+
+      #searchInput {
+        width: 85% !important;
+      }
+
+      #chat-window {
+        width: 350px !important;
+      }
+    }
+
+    /* General responsive rules */
+    * {
+      box-sizing: border-box;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Improved touch targets for mobile */
+    button, 
+    a, 
+    input[type="button"],
+    input[type="submit"] {
+      min-height: 44px;
+      min-width: 44px;
+    }
+
+    /* Flexible text sizing */
+    html {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 768px) {
+      html {
+        font-size: 14px;
+      }
+    }
+
+    /* Prevent horizontal scrolling */
+    body {
+      overflow-x: hidden;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Improve form element accessibility */
+    input, 
+    select, 
+    textarea {
+      font-size: 16px !important; /* Prevents zoom on iOS */
+    }
+  </style>
+  </style>
+  <!-- Calendar Section -->
+  <div id="calendar-section" style="padding: 40px 20px; background: #fff;">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h2 style="text-align: center; color: #1a1a1a; margin-bottom: 30px; font-size: 32px;">Event Calendar</h2>
+      
+      <!-- Admin Controls -->
+      <div id="admin-controls" style="margin-bottom: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+        <h3 style="color: #00aaff; margin-bottom: 15px;">Add New Event</h3>
+        <div style="display: grid; gap: 15px;">
+          <input type="text" id="eventTitle" placeholder="Event Title" style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+          <input type="date" id="eventDate" style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+          <input type="time" id="eventTime" style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+          <textarea id="eventDescription" placeholder="Event Description" style="padding: 10px; border: 1px solid #ddd; border-radius: 4px; height: 100px;"></textarea>
+          <button onclick="addEvent()" style="padding: 12px; background: #00aaff; color: white; border: none; border-radius: 4px; cursor: pointer;">Add Event</button>
+        </div>
+      </div>
+
+      <!-- Calendar Display -->
+      <div id="calendar" style="background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden;">
+        <div id="calendar-header" style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background: #00aaff; color: white;">
+          <button onclick="previousMonth()" style="background: none; border: none; color: white; cursor: pointer;">❮</button>
+          <h3 id="monthDisplay" style="margin: 0;"></h3>
+          <button onclick="nextMonth()" style="background: none; border: none; color: white; cursor: pointer;">❯</button>
+        </div>
+        <div id="calendar-days" style="display: grid; grid-template-columns: repeat(7, 1fr); text-align: center; padding: 10px; background: #f8f9fa;">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+        </div>
+        <div id="calendar-body" style="display: grid; grid-template-columns: repeat(7, 1fr);"></div>
+      </div>
+
+      <!-- Events List -->
+      <!-- Event Management Controls -->
+      <div id="event-management" style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+        <h3 style="color: #1a1a1a; margin-bottom: 15px;">Event Management</h3>
+        
+        <!-- Event Selection -->
+        <div style="margin-bottom: 20px;">
+          <select id="eventSelect" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 10px;">
+            <option value="">Select an Event</option>
+          </select>
+
+          <!-- Status Update -->
+          <select id="eventStatus" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 10px;">
+            <option value="pending">Pending</option>
+            <option value="onboarding">Onboarding</option>
+            <option value="completed">Completed</option>
+          </select>
+
+          <div style="display: flex; gap: 10px;">
+            <button onclick="updateEventStatus()" style="flex: 1; padding: 10px; background: #00aaff; color: white; border: none; border-radius: 4px; cursor: pointer;">Update Status</button>
+            <button onclick="deleteEvent()" style="flex: 1; padding: 10px; background: #ff4444; color: white; border: none; border-radius: 4px; cursor: pointer;">Delete Event</button>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        function updateEventSelect() {
+          const select = document.getElementById('eventSelect');
+          select.innerHTML = '<option value="">Select an Event</option>';
+          events.forEach(event => {
+            select.innerHTML += `<option value="${event.id}">${event.title} (${event.date})</option>`;
+          });
+        }
+
+        function updateEventStatus() {
+          const eventId = document.getElementById('eventSelect').value;
+          const newStatus = document.getElementById('eventStatus').value;
+          
+          if (!eventId) {
+            alert('Please select an event');
+            return;
+          }
+
+          const eventIndex = events.findIndex(e => e.id === eventId);
+          if (eventIndex !== -1) {
+            events[eventIndex].status = newStatus;
+            localStorage.setItem('events', JSON.stringify(events));
+            alert('Event status updated successfully');
+            updateEventSelect();
+            renderCalendar();
+          }
+        }
+
+        function deleteEvent() {
+          const eventId = document.getElementById('eventSelect').value;
+          
+          if (!eventId) {
+            alert('Please select an event');
+            return;
+          }
+
+          if (confirm('Are you sure you want to delete this event?')) {
+            events = events.filter(e => e.id !== eventId);
+            localStorage.setItem('events', JSON.stringify(events));
+            alert('Event deleted successfully');
+            updateEventSelect();
+            renderCalendar();
+          }
+        }
+
+        // Initialize event select on page load
+        updateEventSelect();
+      </script>
+      <div id="events-list" style="margin-top: 30px;">
+        <h3 style="color: #1a1a1a; margin-bottom: 15px;">Upcoming Events</h3>
+        <div id="upcoming-events" style="display: grid; gap: 15px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let currentDate = new Date();
+    let events = JSON.parse(localStorage.getItem('events')) || [];
+
+    function renderCalendar() {
+      const firstDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
+      const lastDay = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0);
+      const startingDay = firstDay.getDay();
+      const monthDays = lastDay.getDate();
+
+      document.getElementById('monthDisplay').textContent = 
+        `${currentDate.toLocaleString('default', { month: 'long' })} ${currentDate.getFullYear()}`;
+
+      const calendarBody = document.getElementById('calendar-body');
+      calendarBody.innerHTML = '';
+
+      for (let i = 0; i < startingDay; i++) {
+        const emptyDay = document.createElement('div');
+        emptyDay.style.padding = '10px';
+        calendarBody.appendChild(emptyDay);
+      }
+
+      for (let day = 1; day <= monthDays; day++) {
+        const dayElement = document.createElement('div');
+        dayElement.style.padding = '10px';
+        dayElement.style.cursor = 'pointer';
+        dayElement.style.position = 'relative';
+        
+        const dateStr = `${currentDate.getFullYear()}-${(currentDate.getMonth() + 1).toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
+        const hasEvents = events.some(event => event.date.startsWith(dateStr));
+        
+        if (hasEvents) {
+          const dot = document.createElement('div');
+          dot.style.width = '6px';
+          dot.style.height = '6px';
+          dot.style.borderRadius = '50%';
+          dot.style.backgroundColor = '#00aaff';
+          dot.style.position = 'absolute';
+          dot.style.bottom = '3px';
+          dot.style.left = '50%';
+          dot.style.transform = 'translateX(-50%)';
+          dayElement.appendChild(dot);
+        }
+
+        dayElement.textContent = day;
+        dayElement.onclick = () => showEventsForDate(dateStr);
+        calendarBody.appendChild(dayElement);
+      }
+
+      renderUpcomingEvents();
+    }
+
+    function addEvent() {
+      const title = document.getElementById('eventTitle').value;
+      const date = document.getElementById('eventDate').value;
+      const time = document.getElementById('eventTime').value;
+      const description = document.getElementById('eventDescription').value;
+
+      if (!title || !date) {
+        alert('Please fill in at least the title and date');
+        return;
+      }
+
+      events.push({
+        title,
+        date,
+        time,
+        description
+      });
+
+      localStorage.setItem('events', JSON.stringify(events));
+      renderCalendar();
+      clearForm();
+    }
+
+    function clearForm() {
+      document.getElementById('eventTitle').value = '';
+      document.getElementById('eventDate').value = '';
+      document.getElementById('eventTime').value = '';
+      document.getElementById('eventDescription').value = '';
+    }
+
+    function showEventsForDate(date) {
+      const dayEvents = events.filter(event => event.date === date);
+      const upcomingEvents = document.getElementById('upcoming-events');
+      upcomingEvents.innerHTML = '';
+
+      dayEvents.forEach(event => {
+        const eventElement = createEventElement(event);
+        upcomingEvents.appendChild(eventElement);
+      });
+    }
+
+    function renderUpcomingEvents() {
+      const upcomingEvents = document.getElementById('upcoming-events');
+      upcomingEvents.innerHTML = '';
+
+      const today = new Date();
+      const futureEvents = events
+        .filter(event => new Date(event.date) >= today)
+        .sort((a, b) => new Date(a.date) - new Date(b.date))
+        .slice(0, 5);
+
+      futureEvents.forEach(event => {
+        const eventElement = createEventElement(event);
+        upcomingEvents.appendChild(eventElement);
+      });
+    }
+
+    function createEventElement(event) {
+      const div = document.createElement('div');
+      div.style.padding = '15px';
+      div.style.background = '#f8f9fa';
+      div.style.borderRadius = '8px';
+      div.style.borderLeft = '4px solid #00aaff';
+
+      div.innerHTML = `
+        <h4 style="margin: 0 0 10px 0; color: #1a1a1a;">${event.title}</h4>
+        <p style="margin: 0; color: #555;">
+          <strong>Date:</strong> ${new Date(event.date).toLocaleDateString()}
+          ${event.time ? `<br><strong>Time:</strong> ${event.time}` : ''}
+          ${event.description ? `<br><strong>Description:</strong> ${event.description}` : ''}
+        </p>
+      `;
+
+      return div;
+    }
+
+    function previousMonth() {
+      currentDate.setMonth(currentDate.getMonth() - 1);
+      renderCalendar();
+    }
+
+    function nextMonth() {
+      currentDate.setMonth(currentDate.getMonth() + 1);
+      renderCalendar();
+    }
+
+    // Initialize calendar
+    renderCalendar();
+  </script>
+  <!-- Event Planning & Task Management Section -->
+  <div id="event-planning" style="padding: 40px 20px; background: #fff;">
+    <h2 style="text-align: center; color: #1a1a1a; font-size: 32px; margin-bottom: 40px;">Event Planning Dashboard</h2>
+    
+    <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+      
+      <!-- Add New Event Form -->
+      <div style="background: #f8f9fa; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <h3 style="color: #00aaff; margin-bottom: 20px;">Add New Event</h3>
+        <form id="eventForm" onsubmit="addNewEvent(event)">
+          <input type="text" id="eventTitle" placeholder="Event Title" required
+                 style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;">
+          <input type="date" id="eventDate" required
+                 style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;">
+          <input type="time" id="eventTime" required
+                 style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;">
+          <textarea id="eventDescription" placeholder="Event Description" rows="3"
+                    style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+          <input type="number" id="eventBudget" placeholder="Budget (₹)" required
+                 style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;">
+          <button type="submit" 
+                  style="width: 100%; padding: 10px; background: #00aaff; color: white; border: none; border-radius: 4px; cursor: pointer;">
+            Add Event
+          </button>
+        </form>
+      </div>
+
+      <!-- Task Assignment Section -->
+      <div style="background: #f8f9fa; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <h3 style="color: #00aaff; margin-bottom: 20px;">Task Assignment</h3>
+        <form id="taskForm" onsubmit="assignTask(event)">
+          <select id="eventSelect" required
+                  style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;">
+            <option value="">Select Event</option>
+          </select>
+          <input type="text" id="taskTitle" placeholder="Task Title" required
+                 style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;">
+          <input type="text" id="assignee" placeholder="Assignee Name" required
+                 style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;">
+          <input type="date" id="taskDueDate" required
+                 style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;">
+          <button type="submit"
+                  style="width: 100%; padding: 10px; background: #00aaff; color: white; border: none; border-radius: 4px; cursor: pointer;">
+            Assign Task
+          </button>
+        </form>
+      </div>
+
+      <!-- Expense Tracking -->
+      <div style="background: #f8f9fa; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <h3 style="color: #00aaff; margin-bottom: 20px;">Expense Tracking</h3>
+        <form id="expenseForm" onsubmit="addExpense(event)">
+          <select id="expenseEventSelect" required
+                  style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;">
+            <option value="">Select Event</option>
+          </select>
+          <input type="text" id="expenseTitle" placeholder="Expense Title" required
+                 style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;">
+          <input type="number" id="expenseAmount" placeholder="Amount (₹)" required
+                 style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;">
+          <input type="file" id="billUpload" accept="image/*,.pdf"
+                 style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 4px;">
+          <button type="submit"
+                  style="width: 100%; padding: 10px; background: #00aaff; color: white; border: none; border-radius: 4px; cursor: pointer;">
+            Add Expense
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Event Overview -->
+    <div style="max-width: 1200px; margin: 40px auto 0; background: #f8f9fa; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      <h3 style="color: #00aaff; margin-bottom: 20px;">Event Overview</h3>
+      <div id="eventOverview"></div>
+    </div>
+  </div>
+
+  <script>
+    // Store events, tasks and expenses in localStorage
+    let events = JSON.parse(localStorage.getItem('events')) || [];
+    let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    let expenses = JSON.parse(localStorage.getItem('expenses')) || [];
+
+    function addNewEvent(e) {
+      e.preventDefault();
+      const event = {
+        id: Date.now(),
+        title: document.getElementById('eventTitle').value,
+        date: document.getElementById('eventDate').value,
+        time: document.getElementById('eventTime').value,
+        description: document.getElementById('eventDescription').value,
+        budget: document.getElementById('eventBudget').value,
+        tasks: [],
+        expenses: []
+      };
+      events.push(event);
+      localStorage.setItem('events', JSON.stringify(events));
+      updateEventSelects();
+      updateEventOverview();
+      e.target.reset();
+    }
+
+    function assignTask(e) {
+      e.preventDefault();
+      const task = {
+        id: Date.now(),
+        eventId: document.getElementById('eventSelect').value,
+        title: document.getElementById('taskTitle').value,
+        assignee: document.getElementById('assignee').value,
+        dueDate: document.getElementById('taskDueDate').value,
+        status: 'Pending'
+      };
+      tasks.push(task);
+      localStorage.setItem('tasks', JSON.stringify(tasks));
+      updateEventOverview();
+      e.target.reset();
+    }
+
+    function addExpense(e) {
+      e.preventDefault();
+      const expense = {
+        id: Date.now(),
+        eventId: document.getElementById('expenseEventSelect').value,
+        title: document.getElementById('expenseTitle').value,
+        amount: document.getElementById('expenseAmount').value,
+        billFile: document.getElementById('billUpload').value
+      };
+      expenses.push(expense);
+      localStorage.setItem('expenses', JSON.stringify(expenses));
+      updateEventOverview();
+      e.target.reset();
+    }
+
+    function updateEventSelects() {
+      const eventSelects = document.querySelectorAll('#eventSelect, #expenseEventSelect');
+      const options = events.map(event => 
+        `<option value="${event.id}">${event.title} (${event.date})</option>`
+      ).join('');
+      
+      eventSelects.forEach(select => {
+        select.innerHTML = '<option value="">Select Event</option>' + options;
+      });
+    }
+
+    function updateEventOverview() {
+      const overview = document.getElementById('eventOverview');
+      overview.innerHTML = events.map(event => {
+        const eventTasks = tasks.filter(task => task.eventId == event.id);
+        const eventExpenses = expenses.filter(expense => expense.eventId == event.id);
+        const totalExpenses = eventExpenses.reduce((sum, exp) => sum + Number(exp.amount), 0);
+        
+        return `
+          <div style="border-bottom: 1px solid #ddd; padding: 20px 0;">
+            <h4 style="color: #1a1a1a; margin-bottom: 10px;">${event.title}</h4>
+            <p>Date: ${event.date} ${event.time}</p>
+            <p>Budget: ₹${event.budget} | Expenses: ₹${totalExpenses}</p>
+            <div style="margin-top: 10px;">
+              <h5 style="color: #555;">Tasks:</h5>
+              ${eventTasks.map(task => `
+                <div style="margin: 5px 0;">
+                  • ${task.title} - Assigned to: ${task.assignee} (Due: ${task.dueDate})
+                </div>
+              `).join('')}
+            </div>
+            <div style="margin-top: 10px;">
+              <h5 style="color: #555;">Expenses:</h5>
+              ${eventExpenses.map(expense => `
+                <div style="margin: 5px 0;">
+                  • ${expense.title}: ₹${expense.amount}
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Initialize
+    updateEventSelects();
+    updateEventOverview();
+  </script>
+  <!-- Event Registration Section -->
+  <div id="registration" style="padding: 40px 20px; background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);">
+    <div style="max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+      <h2 style="text-align: center; color: #1a1a1a; font-size: 28px; margin-bottom: 30px;">Event Registration</h2>
+      
+      <form id="registrationForm" onsubmit="handleRegistration(event)" style="display: flex; flex-direction: column; gap: 20px;">
+        <div style="display: flex; flex-direction: column;">
+          <label for="name" style="color: #555; margin-bottom: 5px;">Full Name</label>
+          <input type="text" id="name" required style="padding: 10px; border: 2px solid #00aaff; border-radius: 8px; font-size: 16px;">
+        </div>
+        
+        <div style="display: flex; flex-direction: column;">
+          <label for="email" style="color: #555; margin-bottom: 5px;">Email</label>
+          <input type="email" id="email" required style="padding: 10px; border: 2px solid #00aaff; border-radius: 8px; font-size: 16px;">
+        </div>
+        
+        <div style="display: flex; flex-direction: column;">
+          <label for="phone" style="color: #555; margin-bottom: 5px;">Phone Number</label>
+          <input type="tel" id="phone" required style="padding: 10px; border: 2px solid #00aaff; border-radius: 8px; font-size: 16px;">
+        </div>
+        
+        <button type="submit" style="background: #00aaff; color: white; padding: 12px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; transition: background 0.3s;">Register</button>
+      </form>
+
+      <div id="qrCode" style="display: none; text-align: center; margin-top: 30px;"></div>
+      
+      <!-- Admin Section -->
+      <div style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #eee;">
+        <h3 style="color: #1a1a1a; font-size: 20px; margin-bottom: 20px;">Event Admin</h3>
+        
+        <div style="display: flex; gap: 15px; margin-bottom: 20px;">
+          <input type="text" id="searchAttendee" placeholder="Search attendee by name or email" style="flex: 1; padding: 10px; border: 2px solid #00aaff; border-radius: 8px;">
+          <button onclick="searchAttendees()" style="background: #00aaff; color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer;">Search</button>
+        </div>
+        
+        <button onclick="downloadAttendeeData()" style="background: #1a1a1a; color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer;">Download Attendee Data</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+  
+  <script>
+    // Store attendees in local storage
+    let attendees = JSON.parse(localStorage.getItem('attendees')) || [];
+
+    function handleRegistration(event) {
+      event.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      
+      // Generate unique ID
+      const attendeeId = Date.now().toString();
+      
+      // Create attendee object
+      const attendee = {
+        id: attendeeId,
+        name,
+        email,
+        phone,
+        registered: new Date().toISOString()
+      };
+      
+      // Add to attendees array
+      attendees.push(attendee);
+      localStorage.setItem('attendees', JSON.stringify(attendees));
+      
+      // Generate QR Code
+      const qrDiv = document.getElementById('qrCode');
+      qrDiv.innerHTML = '';
+      qrDiv.style.display = 'block';
+      
+      new QRious({
+        element: document.createElement('canvas'),
+        value: attendeeId,
+        size: 200
+      }).then(qr => {
+        qrDiv.appendChild(qr.canvas);
+      });
+      
+      // Reset form
+      event.target.reset();
+      
+      alert('Registration successful! Your QR code has been generated.');
+    }
+
+    function searchAttendees() {
+      const searchTerm = document.getElementById('searchAttendee').value.toLowerCase();
+      const foundAttendee = attendees.find(a => 
+        a.name.toLowerCase().includes(searchTerm) || 
+        a.email.toLowerCase().includes(searchTerm)
+      );
+      
+      if (foundAttendee) {
+        alert(`Checked in: ${foundAttendee.name}`);
+      } else {
+        alert('Attendee not found');
+      }
+    }
+
+    function downloadAttendeeData() {
+      const ws = XLSX.utils.json_to_sheet(attendees);
+      const wb = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(wb, ws, "Attendees");
+      XLSX.writeFile(wb, "event_attendees.xlsx");
+    }
+  </script>
+  <!-- Certificate Generation Section -->
+  <div style="padding: 40px 20px; background: #f8f9fa;">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h2 style="text-align: center; color: #1a1a1a; margin-bottom: 30px;">Certificate Generation</h2>
+
+      <!-- Template Upload -->
+      <div style="margin-bottom: 30px;">
+        <h3 style="color: #1a1a1a; margin-bottom: 15px;">Upload Certificate Template</h3>
+        <input type="file" id="templateFile" accept=".pdf,.doc,.docx" style="display: none;" onchange="validateTemplate()">
+        <button onclick="document.getElementById('templateFile').click()" style="background: #00aaff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+          Upload Template
+        </button>
+        <span id="templateName" style="margin-left: 10px; color: #555;"></span>
+      </div>
+
+      <!-- Bulk Email Section -->
+      <div>
+        <h3 style="color: #1a1a1a; margin-bottom: 15px;">Send Certificates</h3>
+        <div style="margin-bottom: 20px;">
+          <label style="display: block; margin-bottom: 10px;">Email Subject:</label>
+          <input type="text" id="emailSubject" placeholder="Enter email subject" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;">
+        </div>
+        <div style="margin-bottom: 20px;">
+          <label style="display: block; margin-bottom: 10px;">Email Body:</label>
+          <textarea id="emailBody" rows="4" placeholder="Enter email message" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+        </div>
+        <button onclick="sendCertificates()" style="background: #00aaff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+          Send Certificates
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let certificateTemplate = null;
+
+    function validateTemplate() {
+      const file = document.getElementById('templateFile').files[0];
+      const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+      
+      if (file && allowedTypes.includes(file.type)) {
+        certificateTemplate = file;
+        document.getElementById('templateName').textContent = file.name;
+      } else {
+        alert('Please upload a valid PDF or Word document');
+        document.getElementById('templateFile').value = '';
+        document.getElementById('templateName').textContent = '';
+      }
+    }
+
+    function sendCertificates() {
+      if (!certificateTemplate) {
+        alert('Please upload a certificate template first');
+        return;
+      }
+
+      const subject = document.getElementById('emailSubject').value;
+      const body = document.getElementById('emailBody').value;
+
+      if (!subject || !body) {
+        alert('Please fill in both email subject and body');
+        return;
+      }
+
+      // Get attendees data
+      const attendees = JSON.parse(localStorage.getItem('attendees')) || [];
+      
+      if (attendees.length === 0) {
+        alert('No attendees found in the database');
+        return;
+      }
+
+      // Simulate sending certificates
+      attendees.forEach(attendee => {
+        // In a real implementation, you would:
+        // 1. Use the template to generate a personalized certificate
+        // 2. Send the email with certificate attachment using a backend service
+        console.log(`Sending certificate to ${attendee.name} at ${attendee.email}`);
+      });
+
+      alert('Certificates are being generated and sent. This may take a few minutes.');
+    }
+  </script>
+  </body>
+  </html>   
+
